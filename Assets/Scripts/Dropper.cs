@@ -6,7 +6,7 @@ public class Dropper : MonoBehaviour
 {
     MeshRenderer renderer;
     Rigidbody rigidBody;
-    [SerializeField] float timeToWait = 5f;
+    [SerializeField] float timeToWait = 15f;
 
     void Start()
     {
@@ -21,8 +21,6 @@ public class Dropper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
         if (Time.time > timeToWait)
         {
             rigidBody.useGravity = true;
